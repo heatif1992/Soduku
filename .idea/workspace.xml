@@ -27,8 +27,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Sudoku.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-731">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+            <state relative-caret-position="17">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1252#1253#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,10 +46,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SudokuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <state relative-caret-position="1309">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1492#1493#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1603#1604#0" expanded="true" />
+                <element signature="e#1669#1670#0" expanded="true" />
+                <element signature="e#1714#1715#0" expanded="true" />
+                <element signature="e#1777#1778#0" expanded="true" />
+                <element signature="e#1822#1823#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,9 +78,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/houssam/Sudoku/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SudokuTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sudoku.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Sudoku.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SudokuTest.java" />
       </list>
     </option>
   </component>
@@ -103,6 +121,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -126,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Sudoku">
+  <component name="RunManager" selected="JUnit.SudokuTest">
     <configuration name="Sudoku" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sudoku" />
       <module name="nextStep assesment for apple" />
@@ -139,6 +158,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SudokuTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudokuTest.checkSudoku" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nextStep assesment for apple" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SudokuTest" />
+      <option name="METHOD_NAME" value="checkSudoku" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,8 +205,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sudoku" />
         <item itemvalue="JUnit.SudokuTest" />
+        <item itemvalue="JUnit.SudokuTest.checkSudoku" />
+        <item itemvalue="Application.Sudoku" />
         <item itemvalue="JUnit.Test.checkSudoku" />
         <item itemvalue="JUnit.Test" />
       </list>
@@ -195,46 +225,82 @@
       <updated>1577913770645</updated>
       <workItem from="1577913772322" duration="2732000" />
       <workItem from="1577937589403" duration="2263000" />
+      <workItem from="1577988420818" duration="17000" />
+      <workItem from="1578087478196" duration="19841000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test - 2020.01.01 at 15h 46m 22s.xml">
-      <configuration name="Test" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 21h 57m 59s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test - 2020.01.01 at 18h 10m 40s.xml">
-      <configuration name="Test" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 05m 22s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_checkSudoku - 2020.01.01 at 18h 13m 17s.xml">
-      <configuration name="Test.checkSudoku" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 06m 31s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SudokuTest - 2020.01.01 at 18h 21m 20s.xml">
-      <configuration name="SudokuTest" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 07m 20s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SudokuTest - 2020.01.01 at 18h 22m 10s.xml">
-      <configuration name="SudokuTest" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 16m 30s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SudokuTest - 2020.01.01 at 18h 23m 59s.xml">
-      <configuration name="SudokuTest" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 16m 54s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SudokuTest - 2020.01.01 at 22h 06m 19s.xml">
-      <configuration name="SudokuTest" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 32m 33s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SudokuTest - 2020.01.01 at 22h 06m 29s.xml">
-      <configuration name="SudokuTest" configurationId="JUnit" />
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 54m 14s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SudokuTest - 2020.01.01 at 22h 37m 18s.xml">
+    <history-entry file="SudokuTest_checkSudoku - 2020.01.03 at 22h 54m 55s.xml">
+      <configuration name="SudokuTest.checkSudoku" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SudokuTest - 2020.01.03 at 22h 55m 07s.xml">
       <configuration name="SudokuTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4995000" />
+    <option name="totallyTimeSpent" value="24853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16308725" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38243628" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -263,22 +329,13 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/houssam/Sudoku/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/houssam/Sudoku/Test.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -295,18 +352,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SudokuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        <state relative-caret-position="1309">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1603#1604#0" expanded="true" />
+            <element signature="e#1669#1670#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doc/index-files/index-1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Sudoku.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        <state relative-caret-position="17">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
