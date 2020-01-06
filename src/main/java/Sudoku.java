@@ -44,72 +44,92 @@ public class Sudoku {
      * @param grid a matrix of integer represent the Soduku table
      * @return true if it's correct, false if it's not
      */
-    public static boolean checkSudoku(int[][] grid) {
+    public boolean checkSudoku(int[][] grid){
 
-        Sudoku table=new Sudoku();
 
         /*
-        this condition will check the line and the column of the grid by the helper function checkLine, if it's false
-        it will return false else it will execute the code that check all the sub grid 3x3 of the sudoku grid
+        this condition will handel the exception if the dimension of the grid is different to 9x9
          */
-        if(checkLine(table, grid, false) && checkLine(table, grid, true)){
-            for(int i=0;i<9;i++) {
-                for(int j=0+(i%3)*3;j<3+(i%3)*3;j++) {
-                    for(int k=0+(i/3)*3;k<3+(i/3)*3;k++) {
-                        if(table.indexMemory[grid[j][k]-1]==table.duplicationMemory) {
-                            return false;
-                        }
-                        else table.indexMemory[grid[j][k]-1]++;
-                    }
-                }
-                table.duplicationMemory++;
-            }
-        }
+        if(grid.length!=9 || grid[0].length != 9)
+            throw new InvalidSudokuDimension("invalid dimensions");
+
+        /*
+        this condition will check the rows, the columns and the subGrid if there is no duplication it will return true
+         */
+        if(checkRows(grid) && checkColumns(grid)&& checkSubGrid(grid))
+            return true;
         else
             return false;
-
-        return true;
     }
 
+
     /**
-     * this is a helper method that will check each line and column of the grid
-     * @param sudoku object of the Sudoku class
+     * this method checks the rows of the sudoku grid
      * @param grid a matrix of integer represent the Soduku table
-     * @param isRow a boolean value: true => to check the rows | false => to check the columns
-     * @return a boolean value: true => there is no duplicated values in all the row or column | false => there is
-     * a duplicated value in a column or a row
+     * @return boolean value: true=> if the values is not duplicated in each row | false=> if the values is duplicated
      */
-    public static boolean checkLine(Sudoku sudoku, int[][] grid, boolean isRow){
+    public boolean checkRows(int[][] grid){
         for(int i=0;i<9;i++) {
             for(int j=0;j<9;j++) {
-                if(isRow){
-                    if(!checkDuplicate(sudoku,grid[i][j]-1)){
+                    if(grid[i][j]<1 || grid[i][j]>9)
+                        throw new OutOfRangeElement(grid[i][j]+" is a wrong value it should be between 1 and 9");
+                    if(!checkDuplicate(grid[i][j]-1)){
                         return false;
                     }
-                }
-                else{
-                    if(!checkDuplicate(sudoku,grid[j][i]-1)){
-                        return false;
-                    }
-                }
-
             }
-            sudoku.setDuplicationMemory(sudoku.getDuplicationMemory()+1);
+            setDuplicationMemory(getDuplicationMemory()+1);
         }
         return true;
     }
 
     /**
-     * this is a helper method of the checkLine method that detect the duplicated values
-     * @param sudoku object of the Sudoku class
+     * this method checks the columns of the sudoku grid
+     * @param grid a matrix of integer represent the Soduku table
+     * @return boolean value: true=> if the values is not duplicated in each column | false=> if the values is duplicated
+     */
+    public boolean checkColumns(int[][] grid){
+        for(int i=0;i<9;i++) {
+            for(int j=0;j<9;j++) {
+                if(!checkDuplicate(grid[j][i]-1)){
+                    return false;
+                }
+            }
+            setDuplicationMemory(getDuplicationMemory()+1);
+        }
+        return true;
+    }
+
+    /**
+     * this method checks the sub grid 3x3 of the sudoku grid
+     * @param grid a matrix of integer represent the Soduku table
+     * @return boolean value: true=> if the values is not duplicated in each sub grid | false=> if the values is duplicated
+     */
+    public boolean checkSubGrid(int[][] grid){
+        for(int i=0;i<9;i++) {
+            for(int j=0+(i%3)*3;j<3+(i%3)*3;j++) {
+                for(int k=0+(i/3)*3;k<3+(i/3)*3;k++) {
+                    if(indexMemory[grid[j][k]-1]==duplicationMemory) {
+                        return false;
+                    }
+                    else indexMemory[grid[j][k]-1]++;
+                }
+            }
+            duplicationMemory++;
+        }
+        return true;
+    }
+
+
+    /**
+     * this is a helper method of the methods checkRows, checkColumns and checkSubGrid it detect the duplicated values
      * @param gridValue a matrix of integer represent the Soduku table
      * @return boolean value: true=> if the value is not duplicated | false=> if the value is duplicated
      */
-    public static boolean checkDuplicate(Sudoku sudoku, int gridValue){
-        if(sudoku.getIndexMemory()[gridValue]==sudoku.getDuplicationMemory()) {
+    public boolean checkDuplicate(int gridValue){
+        if(getIndexMemory()[gridValue]==getDuplicationMemory()) {
             return false;
         }
-        else sudoku.setIndexMemory(gridValue,sudoku.getIndexMemory()[gridValue]+1);
+        else setIndexMemory(gridValue,getIndexMemory()[gridValue]+1);
         return true;
     }
 
@@ -120,8 +140,10 @@ public class Sudoku {
      */
     public static void main(String[] args) {
 
+        Sudoku sudoku=new Sudoku();
+
         int d[][]={
-                {1,4,7,1,4,7,1,4,7},
+                {10,4,7,1,4,7,1,4,7},
                 {2,5,8,2,5,8,2,5,8},
                 {3,6,9,3,6,9,3,6,9},
                 {4,7,1,4,7,1,4,7,1},
@@ -129,10 +151,10 @@ public class Sudoku {
                 {6,9,3,6,9,3,6,9,3},
                 {7,1,4,7,1,4,7,1,4},
                 {8,2,5,8,2,5,8,2,5},
-                {9,3,6,9,3,6,9,3,6},
+                {8,2,5,8,2,5,8,1,5},
         };
 
-        System.out.println(checkSudoku(d));
+        System.out.println(sudoku.checkSudoku(d));
 
 
     }
